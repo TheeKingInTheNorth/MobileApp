@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Back End Of App</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Needed to Add a Text Here</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Here too</a>
+                    </li>
+                    <li>
+                        <a href="#">And Here</a>
+                    </li>
+                    <li>
+                        <a href="#">And Here</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div>
+<div>
+
+
+
+    <div class="container">    
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Add A New Iteam</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"></div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                      <form class="well form-horizontal" action=" " method=""  name="AForm" id="AnimieForm">
+<fieldset>
+
+<!-- Form Name -->
+
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="control-label">Record ID </label>  
+  <div class="inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+  <input  name="RecordID" placeholder="RecordId" class="form-control" id="RecordID" type="Number" Required="Required">
+    </div>
+  </div>
+</div>
+
+
+       
+<div class="form-group">
+  <label class="control-label">Episode </label>  
+    <div class=" inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+  <input name="Episode" placeholder="Episode" id="Episode"class="form-control" type="text" required="required">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class=" control-label">Title</label>  
+    <div class="inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span><input name="Tile" placeholder="Title" class="form-control" id="Title" type="text" required="required">
+    </div>
+  </div>
+</div>
+
+
+
+  
+<div class="form-group">
+  <label class="control-label"> Description</label>
+    <div class="inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+            <textarea class="form-control" name="Description" placeholder="Project Description" id="Description"></textarea>
+  </div>
+  </div>
+</div>
+<div class="form-group" >
+  <label class=" control-label">Insert Image</label>  
+    <div class=" inputGroupContainer">
+    <div class="input-group">
+
+        <input type="file" class="filestyle" id="imagekey"  name="imagekey"data-buttonBefore="true" accept="image/*" required="Required">
+                                        
+    </div>
+  </div>
+</div>
+<div class="form-group" >
+  <label class=" control-label">Rate Episode</label>  
+    <div class=" inputGroupContainer">
+    <div class="input-group">
+
+        <input id="rating" value="4" type="number" name="rating"class="rating" min=0 max=5 step=0.5 data-size="sm">
+    <hr>
+                                        
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Submit <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div>
+
+<footer>
+
+
+
+
+</footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/star-rating.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/a.js"></script>
+<script >
+$(document).ready(function() {
+    AWS.config.accessKeyId = 'AKIAJTEYUG7SS5WKTFOQ';
+    AWS.config.secretAccessKey = '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';
+    AWS.config.region = 'us-east-1';
+    /*Show image from s3 bucket named as yu-app with open permissions
+    * To DO: externalize the url and dynamically retrieve the image key
+    * */
+    var isPicViewable = false;
+    $('#showpicbutton').click(function () {
+        if(!isPicViewable) {
+            $('#showpic').append("<img src='http://yu-app.s3.amazonaws.com/test/kids.jpg' alt='kids'>");
+            isPicViewable = true;
+        }
+    });
+/*
+ curl -X PUT --data-binary "@/Users/mitchellkurman/Desktop/Cruise.jpeg" -H "Content-Type: image/jpeg" -H "x-amz-acl: public-read-write" http://yu-app.s3.amazonaws.com/test/Cruise.jpeg
+ */
+
+    $('#add-record-form').submit(function(e){
+        //alert('hi');
+        e.preventDefault();
+       // alert('entered ajax: '+ e.target.id + ' parentNode:'+ );
+       // alert("entered ajax: "+ $("#add-record-form #imageKey").val().split("\\").pop());
+       // console.log($("#add-record-form #imageKey").val().split("\\").pop());
+
+        //var theFormFile = $('#theFile').get()[0].files[0];
+        var filename = $('#add-record-form #imageKey').val().split('\\').pop();
+
+
+        $.ajax({
+            url: 'http://yu-app.s3.amazonaws.com/test/'+filename, // url where to submit the request
+            headers: {
+                'Content-Type':'image/jpeg'
+            },
+            type: 'PUT', // type of action POST || GET
+            processData: false,
+            //using dataType of response type xml will return null when a PUT is successful.
+            dataType: 'xml',
+            data: $('#imageKey').get()[0].files[0], // post data || get data
+            success: function () {
+                //result will be null when successful but the success option will be executed.
+                console.log($('#imageKey'));
+                //alert("Success: "+ $('#imageKey').get()[0].files[0].name);
+                /*
+                Add record to dynamodb
+                 */
+                var recordId = $('#recordId').val();
+                var episode = $('#episode').val();
+                var description = $('#description').val();
+                var imageKey = $('#imageKey').get()[0].files[0].name;
+                var title = $('#title').val();
+                var rating = $('#rating').val();
+                //alert('{"recordId":"'+recordId+'","description":"'+ description+'","episode":"'+episode+'","imageKey":"'+imageKey+'","rating":"'+rating+'","title":"'+title+'"}');
+                $.ajax({
+                    url: 'https://oq88q01z9j.execute-api.us-east-1.amazonaws.com/prod/yu-anime-record',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    type: 'POST',
+                    processData: false,
+                    dataType: 'json',
+                    data: '{"recordId":"'+recordId+'","description":"'+ description+'","episode":"'+episode+'","imageKey":"'+imageKey+'","rating":"'+rating+'","title":"'+title+'"}',
+                    success: function (e) {
+                        alert ('success');
+                        console.log(e);
+                        $("#add-record-form").trigger("reset");
+                    },
+                    error: function (xhr, resp, text) {
+                        console.log(xhr, resp, text);
+                    }
+                })
+            },
+            error: function (xhr, resp, text) {
+                console.log(xhr, resp, text);
+            }
+        });
+        return true;
+    });
+
+
+})</script>
+
+</body>
+
+</html>
